@@ -1,0 +1,21 @@
+body {
+  background-color:#f08300;
+  text-align:  center;
+  width: 500px;
+  margin-right: auto;
+  margin-left : auto;
+}
+.title{
+  color: white;
+  font-family: cursive
+}
+button {
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-style: none;
+  font-family: serif;
+  font-size: large;
+}
+.loading{
+  color: rgb(0, 0, 0);
+}
