@@ -7,7 +7,7 @@ var totaltime = 0;
 
 var i = 0;
 function first(){
-  i = Math.floor(Math.random()*15000) + 2000;
+  i = Math.floor(Math.random()*8000) + 2000;
   setTimeout(doit,i);
 }
   function doit(){
@@ -18,7 +18,7 @@ function first(){
     var resultplus =  i +'分間';
     paragraph.innerText = resultplus + result;
     resultDivided.appendChild(paragraph);
-    if (Math.floor(Math.random()*10) === 0 ){//終わる確率
+    if (Math.floor(Math.random()*7) === 0 ){//終わる確率
       end();
     }else{
       first();
