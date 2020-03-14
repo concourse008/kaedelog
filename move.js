@@ -131,7 +131,7 @@ function end(){
       const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('カエデログ') + '&ref_src=twsrc%5Etfw';
       anchor.setAttribute('herf',hrefValue);
       anchor.className = 'twitter-hashtag-button';
-      anchor.setAttribute('data-text',tweetvalue + '#カエデログ');
+      anchor.setAttribute('data-text',tweetvalue + '#カエデログ https://concourse008.github.io/kaedelog/main.html');
       anchor.innerText = 'Tweet #カエデログ';
       const script = document.createElement('script');
       script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
