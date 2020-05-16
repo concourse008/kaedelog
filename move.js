@@ -18,7 +18,7 @@ function first(){
     var resultplus =  i +'分間';
     paragraph.innerText = resultplus + result;
     resultDivided.appendChild(paragraph);
-    if (Math.floor(Math.random()*8) === 0 ){//終わる確率
+    if (Math.floor(Math.random()*) === 0 ){//終わる確率
       end();
     }else{
       first();
