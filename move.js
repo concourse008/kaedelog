@@ -18,7 +18,7 @@ function first(){
     var resultplus =  i +'分間';
     paragraph.innerText = resultplus + result;
     resultDivided.appendChild(paragraph);
-    if (Math.floor(Math.random()*10) === 0 ){//終わる確率
+    if (Math.floor(Math.random()*8) === 0 ){//終わる確率
       end();
     }else{
       first();
@@ -79,7 +79,7 @@ const ivents = [
 '本をめくっていました。「これはあれやなー、なるほどなー」',
 '時計を見ていました。「かえでまだかいなー」',
 'ボールで遊んでいました。「かったっせー！」',
-'飾っているファンアートを見ていました。「なるしやなあいつ」',
+'壁のファンアートを見ていました。「なるしやなあいつ」',
 '冷蔵庫に話しかけていました。「ミトちゃんなんかしろない？」',
 '洗濯機に乗っていました。「きりーつ、きおつけぇ」'
 ]
