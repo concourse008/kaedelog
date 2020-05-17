@@ -138,7 +138,7 @@ function end(){
     document.getElementById("pic").src= "dance.gif";
     const paragraph = document.createElement('p');
     const dance = ["ノリの良い曲が流れてきました。<br>「だんちぇのじかんや！」","みんな踊っています。<br>「はちみつだんちぇ！」","ダンスが続いています。<br>「つーきーにっカーエデはー！」","最高に盛り上がっています。<br>「おー、いぇいー！」","フィナーレを盛り上げています。「ありがとー！」"]
-    paragraph.innerText = dance[d];
+    paragraph.innerHTML = dance[d];
     resultDivided.appendChild(paragraph);
     d = d+1;
     if (d === 5){//ダンス終わり
