@@ -22,3 +22,7 @@ button {
 .loading{
   color: rgb(0, 0, 0);
 }
+
+.pic{
+  width: 100%;
+}
