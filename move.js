@@ -164,6 +164,7 @@ function end(){
       anchor.setAttribute('herf',hrefValue);
       anchor.className = 'twitter-hashtag-button';
       anchor.setAttribute('data-text',tweetvalue + '#カエデログ');
+      anchor.setAttribute('data-size',"large");
       anchor.setAttribute('data-url',"https://concourse008.github.io/kaedelog/main.html");
       anchor.innerText = 'Tweet #カエデログ';
       const script = document.createElement('script');
@@ -171,7 +172,7 @@ function end(){
       tweetDivided.appendChild(script);
       tweetDivided.appendChild(anchor);
       //リセットボタン
-      resetbtn.innerHTML='<input type="button" value="もういちど" onclick="reset()"/>';
+      resetbtn.innerHTML='<input type="button" value="もういちど" onclick="reset()"/><p></p>';
     }
 function reset() {
 	window.location.reload();
