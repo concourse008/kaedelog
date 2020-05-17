@@ -157,7 +157,7 @@ function end(){
       const totalhour = Math.floor(totaltime / 60);
       const totalminite = totaltime % 60;
       const tweetvalue =  totalhour + '時間' +totalminite+ '分、カエデの様子を見ていました。';
-      document.getElementById('finalresult-area').innerHTML = '--  スコア  --<br>${tweetvalue}';
+      document.getElementById('finalresult-area').innerHTML = '--  スコア  --<br>'+`${tweetvalue}`;
       //ツイートボタン表示
       const anchor = document.createElement('a');
       const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('カエデログ') + '&ref_src=twsrc%5Etfw';
