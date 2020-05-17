@@ -137,7 +137,7 @@ function end(){
     //ダンス画像を表示
     document.getElementById("pic").src= "dance.gif";
     const paragraph = document.createElement('p');
-    const dance = ["ノリの良い曲が流れてきました。<br>「だんちぇのじかんや！」","みんな踊っています。<br>「はちみつだんちぇ！」","ダンスが続いています。<br>「つーきーにっカーエデはー！」","最高に盛り上がっています。<br>「おー、いぇいー！」","フィナーレを盛り上げています。「ありがとー！」"]
+    const dance = ['ノリの良い曲が流れてきました。<br>「だんちぇのじかんや！」','みんな踊っています。<br>「はちみつだんちぇ！」','ダンスが続いています。<br>「つーきーにっカーエデはー！」','最高に盛り上がっています。<br>「おー、いぇいー！」','フィナーレを盛り上げています。<br>「ありがとー！」']
     paragraph.innerHTML = dance[d];
     resultDivided.appendChild(paragraph);
     d = d+1;
@@ -151,13 +151,13 @@ function end(){
       //寝てる画像表示+寝る
       document.getElementById("pic").src="sleep.png"
       const paragraph = document.createElement('p');
-      paragraph.innerText = 'カエデは歌い疲れて眠りました。「やりきった……」';
+      paragraph.innerHTML = 'カエデは歌い疲れて眠りました。<br>「やりきった……」';
       resultDivided.appendChild(paragraph);
       //結果表示
       const totalhour = Math.floor(totaltime / 60);
       const totalminite = totaltime % 60;
       const tweetvalue =  totalhour + '時間' +totalminite+ '分、カエデの様子を見ていました。';
-      document.getElementById('finalresult-area').innerText = `スコア： ${tweetvalue}`;
+      document.getElementById('finalresult-area').innerHTML = '--  スコア  --<br>${tweetvalue}';
       //ツイートボタン表示
       const anchor = document.createElement('a');
       const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('カエデログ') + '&ref_src=twsrc%5Etfw';
