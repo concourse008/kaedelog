@@ -170,7 +170,12 @@ function end(){
       script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
       tweetDivided.appendChild(script);
       tweetDivided.appendChild(anchor);
+      //リセットボタン
+      resetbtn.innerHTML='<input type="button" value="もういちど" onclick="reset()"/>';
     }
+function reset() {
+	window.location.reload();
+}
 
 var load = 0;
 startButton.onclick = () =>{
