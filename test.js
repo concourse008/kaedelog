@@ -194,7 +194,7 @@ startButton.onclick = () =>{
   document.getElementById("button").style.visibility="hidden";
   load = setInterval(loading,1000);
   first();
-  sumtime = $sumtime + 1;
+  sumtime = sumtime + 1;
   console.log(sumtime);
   localStorage.sum = sumtime;
 }
@@ -203,11 +203,11 @@ startButton.onclick = () =>{
 let sumtime = 0;
 function getup(){
   localStorage.setItem('sum',0);
-  sumtime = localStorage.getItem('sum');
+  sumtime = Number(localStorage.getItem('sum'));
   console.log(sumtime);
 }
 function setup(){
-  sumtime = localStorage.getItem('sum');
+  sumtime = Number(localStorage.getItem('sum'));
   console.log(sumtime);
 }
 
