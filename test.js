@@ -199,11 +199,13 @@ startButton.onclick = () =>{
 //総見守り時間計算
 function getup(){
   localStorage.setItem('sum',0);
+  var sumtime = localStorage.getItem('sum');
+  console.log(sumtime);
 }
 function setup(){
   var sumtime = localStorage.getItem('sum');
+  console.log(sumtime);
 }
-console.log(sumtime);
 
 if(!localStorage.getItem('bgcolor')) {
   //ストレージなし
