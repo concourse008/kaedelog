@@ -194,13 +194,13 @@ startButton.onclick = () =>{
   document.getElementById("button").style.visibility="hidden";
   load = setInterval(loading,1000);
   first();
-  sumtime += 1;
+  sumtime = sumtime + 1;
   console.log('sumtime');
   localStorage.sum = sumtime;
 }
 
 //総見守り時間計算
-var sumtime = 0;
+let sumtime = 0;
 function getup(){
   localStorage.setItem('sum',0);
   sumtime = localStorage.getItem('sum');
