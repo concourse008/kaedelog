@@ -195,7 +195,7 @@ startButton.onclick = () =>{
   load = setInterval(loading,1000);
   first();
   sumtime = sumtime + 1;
-  console.log('sumtime');
+  console.log(sumtime);
   localStorage.sum = sumtime;
 }
 
@@ -211,7 +211,7 @@ function setup(){
   console.log(sumtime);
 }
 
-if(!localStorage.getItem('bgcolor')) {
+if(!localStorage.getItem('sum')) {
   //ストレージなし
   getup();
 } else {
