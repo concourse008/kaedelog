@@ -169,12 +169,18 @@ function end(){
       const totalminite = totaltime % 60;
       const tweetvalue =  totalhour + '時間' +totalminite+ '分、カエデの様子を見ていました。';
       document.getElementById('finalresult-area').innerHTML = '～　スコア　～<br>'+tweetvalue;
+      //総見守り時間計算
+      sumtime = sumtime + totaltime;
+      localStorage.sum = sumtime;
+      const sumhour = Math.floor(sumtime / 60);
+      const summinite = sumtime % 60;
+      const sumtweetvalue = 'これまで合計' + sumhour + '時間' + summinite + '分、カエデを見守りました。';
       //ツイートボタン表示
       const anchor = document.createElement('a');
       const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('カエデログ') + '&ref_src=twsrc%5Etfw';
       anchor.setAttribute('herf',hrefValue);
       anchor.className = 'twitter-hashtag-button';
-      anchor.setAttribute('data-text',tweetvalue + '#カエデログ');
+      anchor.setAttribute('data-text',tweetvalue + sumtweetvalue + '#カエデログ');
       anchor.setAttribute('data-size',"large");
       anchor.setAttribute('data-url',"https://concourse008.github.io/kaedelog/main.html");
       anchor.innerText = 'Tweet #カエデログ';
@@ -194,9 +200,6 @@ startButton.onclick = () =>{
   document.getElementById("button").style.visibility="hidden";
   load = setInterval(loading,1000);
   first();
-  sumtime = sumtime + 1;
-  console.log(sumtime);
-  localStorage.sum = sumtime;
 }
 
 //総見守り時間計算
