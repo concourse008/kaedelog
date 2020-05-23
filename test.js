@@ -194,7 +194,7 @@ startButton.onclick = () =>{
   document.getElementById("button").style.visibility="hidden";
   load = setInterval(loading,1000);
   first();
-  sumtime = sumtime + 1;
+  sumtime = $sumtime + 1;
   console.log(sumtime);
   localStorage.sum = sumtime;
 }
